@@ -1,11 +1,11 @@
 """
-描述：判断哪一条回归直线为最佳拟合的
+描述：判断由不同参数构成的多条直线中哪一条回归直线为最佳拟合
+链接：http://note.youdao.com/noteshare?id=35b3334eb1f550eebd7650d5873e32fe&sub=wcp1594193795636857
 作者：王佳秋
 日期：2020年6月21日
 """
 
 from sklearn import linear_model  # 表示可以调用sklearn中的linear_model模型进行线性回归
-import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.font_manager import FontProperties
 
@@ -28,10 +28,10 @@ if __name__ == "__main__":
     X = [[6], [8], [10], [14], [18]]
     y = [[7], [9], [13], [17.5], [18]]
     model.fit(X, y)
-    print(model.intercept_)  # 截距
-    print(model.coef_)  # 线性模型的系数
-    a = model.predict([[12]])
-    print("预测一张12英寸匹萨的价格: {:.2f}".format(model.predict([[12]])[0][0]))
+    # print(model.intercept_)  # 截距
+    # print(model.coef_)  # 线性模型的系数
+    # a = model.predict([[12]])
+    # print("预测一张12英寸匹萨的价格: {:.2f}".format(model.predict([[12]])[0][0]))
 
     # plt = runplt()
     # plt.plot(X, y, 'k.')

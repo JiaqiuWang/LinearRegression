@@ -1,5 +1,6 @@
 """
-描述：线性回归模型的模型评估：R方评估
+描述：模型评估：R方评估
+链接：http://note.youdao.com/noteshare?id=35b3334eb1f550eebd7650d5873e32fe&sub=wcp1594193795636857
 作者：王佳秋
 日期：2020年6月27日
 """
@@ -29,7 +30,7 @@ if __name__ == "__main__":
     print("R**2: ", r2)
 
     # 4. 使用scikit-learn验证
-    X_test = [[8], [9], [11], [16], [12]]
+    X_test = [[8], [9], [11], [16], [12]]  # 测试集
     y_test = [[11], [8.5], [15], [18], [11]]
     model = linear_model.LinearRegression()
     model.fit(X, y)
